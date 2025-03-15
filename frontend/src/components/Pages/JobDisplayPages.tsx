@@ -96,7 +96,7 @@ function JobDisplayPages() {
             const pageNum = Number(id) || 1; 
             try {
                 const response=await axios.get(`
-                    https://jobboard-xi.vercel.app//api/jobs?limit=10&location=&page=${pageNum}&salary=${filter.salary}&experience=${filter.experience}&search=${filter.search}
+                    https://jobboard-xi.vercel.app/api/jobs?limit=10&location=&page=${pageNum}&salary=${filter.salary}&experience=${filter.experience}&search=${filter.search}
                     `)
                 console.log(response.data.data)
                 setjobdata(response.data.data)
